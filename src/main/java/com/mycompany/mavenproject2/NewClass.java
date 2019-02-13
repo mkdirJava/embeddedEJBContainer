@@ -15,12 +15,9 @@ import javax.naming.NamingException;
 public class NewClass {
     
     public static void main(String[] args) throws NamingException {
-        System.out.println("HI THERE WISLON LI !!!!!!!!!!!!!!!!!!!!!!!!");
         EJBContainer container = EJBContainer.createEJBContainer();
         NewSessionBean bean = (NewSessionBean) container.getContext().lookup("java:global/classes/NewSessionBean");
         bean.businessMethod();
-        
-        System.out.println("HI THERE WISLON LI !!!!!!!!!!!!!!!!!!!!!!!!");
     }
     
 }
